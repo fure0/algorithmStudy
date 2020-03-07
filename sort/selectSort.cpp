@@ -18,7 +18,7 @@ int main(void) {
         array[index] = temp;
     }
     for(i = 0; i < 10; i++) {
-        printf("%d" , array[i]);
+        printf("%d " , array[i]);
     }
     return 0;
 }
@@ -37,4 +37,7 @@ int main(void) {
 
 컴퓨터에서는 N이 클수록 1더하기나 나누기는 큰 의미가 없기 때문에 생략한다.
 => O(N * N)
+
+= O(N^2)
+
 */
