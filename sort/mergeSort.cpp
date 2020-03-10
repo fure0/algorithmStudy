@@ -57,7 +57,6 @@ int main(void) {
         printf("%d ", array[i]);
     }
 }
-
 /*
 O(N*logN)
 */
