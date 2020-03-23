@@ -34,16 +34,18 @@ int main(void) {
 
 
 /*
-aa
-ba
-bd
-asd
-csdz
-cvss
-ssb
-vbbs
-ba
-asdww
-cvbff
-sdsfdsg
+13
+but
+i
+wont
+hesitate
+no
+more
+no
+more
+it
+cannot
+wait
+im
+yours
 */
