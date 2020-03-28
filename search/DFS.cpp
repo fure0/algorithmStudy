@@ -1,28 +1,19 @@
 #include <iostream>
-#include <queue>
 #include <vector>
 
 using namespace std;
 
 int number = 7;
-int c[7];
+int c[8];
 vector<int> a[8];
 
-void bfs(int start) {
-    queue<int> q;
-    q.push(start);
-    c[start] = true;
-    while(!q.empty()) {
-        int x = q.front();
-        q.pop();
-        printf("%d ", x);
-        for(int i = 0; i < a[x].size(); i++) {
-            int y = a[x][i];
-            if(!c[y]) {
-                q.push(y);
-                c[y] = true;
-            }
-        }
+void dfs(int x) {
+    if(c[x]) return;
+    c[x] = true;
+    cout << x << ' ';
+    for(int i=0; i<a[x].size(); i++) {
+        int y = a[x][i];
+        dfs(y);
     }
 }
 
@@ -55,14 +46,11 @@ int main(void) {
     a[6].push_back(7);
     a[7].push_back(6);
     // BFS실행
-    bfs(1);
+    dfs(1);
     return 0;
 }
 
 /*
-너비 우선 탐색(Breadth First Search, BFS) 탐색을 할 때 너비를 우선
-최단 경로를 찾는다는 점에서 최단 길이 보장할 때 사용
-queue 사용
-BFS 자체로는 큰 의미는 없지만, 너비를 우선 탐색 한다는 특성을 다른 알고리즘에 이용하는 것이 핵심
-
+깊이 우선 탐색(Depth First Search) 탐색을 할 때 깊이 우선
+stack 사용
 */
