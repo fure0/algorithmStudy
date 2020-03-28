@@ -8,8 +8,8 @@ int c[8];
 vector<int> a[8];
 
 void dfs(int x) {
-    if(c[x]) return;
-    c[x] = true;
+    if(c[x]) return; //체크가 있으면 스킵
+    c[x] = true; //체크 처리
     cout << x << ' ';
     for(int i=0; i<a[x].size(); i++) {
         int y = a[x][i];
