@@ -2,8 +2,8 @@
 
 int main()
 {
-  printf("Hello");
+  printf("\"!@#$%%^&*()\"");
   return 0;
 }
 
-//Hello
+//"!@#$%^&*()"
